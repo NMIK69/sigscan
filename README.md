@@ -26,11 +26,11 @@ The library provides two functions for scanning:
 
 ```c
 /* external scanning */
-uintptr_t *sigscan_scan_ext(size_t *num_matches, 
+uintptr_t *sigscan_scan_ext(ssize_t *num_matches, 
 		size_t max_matches, const char *sig, int pid);
 
 /* internal scanning */
-uintptr_t *sigscan_scan_int(size_t *num_matches, 
+uintptr_t *sigscan_scan_int(ssize_t *num_matches, 
 		size_t max_matches, const char *sig);
 
 ```
